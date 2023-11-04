@@ -1,0 +1,424 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "openai-lab-Nov23/1.0.0": {
+        "dependencies": {
+          "Microsoft.SemanticKernel": "1.0.0-beta4",
+          "dotenv.net": "3.1.2"
+        },
+        "runtime": {
+          "openai-lab-Nov23.dll": {}
+        }
+      },
+      "Azure.AI.OpenAI/1.0.0-beta.8": {
+        "dependencies": {
+          "Azure.Core": "1.35.0",
+          "System.Text.Json": "6.0.8"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Azure.AI.OpenAI.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.23.47102"
+          }
+        }
+      },
+      "Azure.Core/1.35.0": {
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "6.0.0",
+          "System.Diagnostics.DiagnosticSource": "6.0.1",
+          "System.Memory.Data": "1.0.2",
+          "System.Numerics.Vectors": "4.5.0",
+          "System.Text.Encodings.Web": "6.0.0",
+          "System.Text.Json": "6.0.8",
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "runtime": {
+          "lib/net6.0/Azure.Core.dll": {
+            "assemblyVersion": "1.35.0.0",
+            "fileVersion": "1.3500.23.45706"
+          }
+        }
+      },
+      "dotenv.net/3.1.2": {
+        "runtime": {
+          "lib/netstandard2.1/dotenv.net.dll": {
+            "assemblyVersion": "3.1.2.0",
+            "fileVersion": "3.1.2.0"
+          }
+        }
+      },
+      "Microsoft.Bcl.AsyncInterfaces/6.0.0": {
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.52210"
+          }
+        }
+      },
+      "Microsoft.Bcl.HashCode/1.1.0": {
+        "runtime": {
+          "lib/netcoreapp2.1/Microsoft.Bcl.HashCode.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "4.700.19.56404"
+          }
+        }
+      },
+      "Microsoft.Bcl.TimeProvider/8.0.0-rc.2.23479.6": {
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "6.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Bcl.TimeProvider.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.47906"
+          }
+        }
+      },
+      "Microsoft.Extensions.Logging.Abstractions/6.0.4": {
+        "runtime": {
+          "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.1823.26907"
+          }
+        }
+      },
+      "Microsoft.SemanticKernel/1.0.0-beta4": {
+        "dependencies": {
+          "Microsoft.SemanticKernel.Connectors.AI.OpenAI": "1.0.0-beta4",
+          "Microsoft.SemanticKernel.Core": "1.0.0-beta4",
+          "Microsoft.SemanticKernel.Planners.Core": "1.0.0-beta4",
+          "Microsoft.SemanticKernel.Plugins.Core": "1.0.0-beta4",
+          "Microsoft.SemanticKernel.Plugins.Memory": "1.0.0-beta4",
+          "Microsoft.SemanticKernel.Reliability.Basic": "1.0.0-beta4",
+          "Microsoft.SemanticKernel.TemplateEngine.Basic": "1.0.0-beta4"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.SemanticKernel.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Microsoft.SemanticKernel.Abstractions/1.0.0-beta4": {
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "6.0.0",
+          "Microsoft.Bcl.HashCode": "1.1.0",
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.4",
+          "System.Text.Json": "6.0.8"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.SemanticKernel.Abstractions.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Microsoft.SemanticKernel.Connectors.AI.OpenAI/1.0.0-beta4": {
+        "dependencies": {
+          "Azure.AI.OpenAI": "1.0.0-beta.8",
+          "Microsoft.SemanticKernel.Core": "1.0.0-beta4",
+          "Microsoft.SemanticKernel.Plugins.Memory": "1.0.0-beta4"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.SemanticKernel.Connectors.AI.OpenAI.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Microsoft.SemanticKernel.Core/1.0.0-beta4": {
+        "dependencies": {
+          "Microsoft.SemanticKernel.Abstractions": "1.0.0-beta4",
+          "System.Diagnostics.DiagnosticSource": "6.0.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.SemanticKernel.Core.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Microsoft.SemanticKernel.Planners.Core/1.0.0-beta4": {
+        "dependencies": {
+          "Microsoft.SemanticKernel.Abstractions": "1.0.0-beta4",
+          "Microsoft.SemanticKernel.Core": "1.0.0-beta4",
+          "Microsoft.SemanticKernel.TemplateEngine.Basic": "1.0.0-beta4"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.SemanticKernel.Planners.Core.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Microsoft.SemanticKernel.Plugins.Core/1.0.0-beta4": {
+        "dependencies": {
+          "Microsoft.Bcl.TimeProvider": "8.0.0-rc.2.23479.6",
+          "Microsoft.SemanticKernel.Core": "1.0.0-beta4"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.SemanticKernel.Plugins.Core.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Microsoft.SemanticKernel.Plugins.Memory/1.0.0-beta4": {
+        "dependencies": {
+          "Microsoft.SemanticKernel.Abstractions": "1.0.0-beta4",
+          "Microsoft.SemanticKernel.Core": "1.0.0-beta4",
+          "System.Numerics.Tensors": "8.0.0-rc.2.23479.6",
+          "System.Text.Json": "6.0.8"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.SemanticKernel.Plugins.Memory.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Microsoft.SemanticKernel.Reliability.Basic/1.0.0-beta4": {
+        "dependencies": {
+          "Microsoft.SemanticKernel.Abstractions": "1.0.0-beta4",
+          "Microsoft.SemanticKernel.Core": "1.0.0-beta4"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.SemanticKernel.Reliability.Basic.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Microsoft.SemanticKernel.TemplateEngine.Basic/1.0.0-beta4": {
+        "dependencies": {
+          "Microsoft.SemanticKernel.Abstractions": "1.0.0-beta4"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.SemanticKernel.TemplateEngine.Basic.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "System.Diagnostics.DiagnosticSource/6.0.1": {
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        }
+      },
+      "System.Memory.Data/1.0.2": {
+        "dependencies": {
+          "System.Text.Encodings.Web": "6.0.0",
+          "System.Text.Json": "6.0.8"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Memory.Data.dll": {
+            "assemblyVersion": "1.0.2.0",
+            "fileVersion": "1.0.221.20802"
+          }
+        }
+      },
+      "System.Numerics.Tensors/8.0.0-rc.2.23479.6": {
+        "runtime": {
+          "lib/net7.0/System.Numerics.Tensors.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.47906"
+          }
+        }
+      },
+      "System.Numerics.Vectors/4.5.0": {},
+      "System.Runtime.CompilerServices.Unsafe/6.0.0": {},
+      "System.Text.Encodings.Web/6.0.0": {
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        }
+      },
+      "System.Text.Json/6.0.8": {
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0",
+          "System.Text.Encodings.Web": "6.0.0"
+        }
+      },
+      "System.Threading.Tasks.Extensions/4.5.4": {}
+    }
+  },
+  "libraries": {
+    "openai-lab-Nov23/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Azure.AI.OpenAI/1.0.0-beta.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xu0QIsD8YJakKsVM2odGBToXwwwI3XzjP8dggD40CQZ4ytKMFAFyboVmtRs0zPFJgGNISMdQIqn2Cg21pYSQ2A==",
+      "path": "azure.ai.openai/1.0.0-beta.8",
+      "hashPath": "azure.ai.openai.1.0.0-beta.8.nupkg.sha512"
+    },
+    "Azure.Core/1.35.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hENcx03Jyuqv05F4RBEPbxz29UrM3Nbhnr6Wl6NQpoU9BCIbL3XLentrxDCTrH54NLS11Exxi/o8MYgT/cnKFA==",
+      "path": "azure.core/1.35.0",
+      "hashPath": "azure.core.1.35.0.nupkg.sha512"
+    },
+    "dotenv.net/3.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-lFm4hGX9JkNtAF36Uz4C3WT7MC6Ys802k0cPvlln8ydmH67GQjnToH+w645tQm1czAjW/V6tPE088lD77sYFGA==",
+      "path": "dotenv.net/3.1.2",
+      "hashPath": "dotenv.net.3.1.2.nupkg.sha512"
+    },
+    "Microsoft.Bcl.AsyncInterfaces/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-UcSjPsst+DfAdJGVDsu346FX0ci0ah+lw3WRtn18NUwEqRt70HaOQ7lI72vy3+1LxtqI3T5GWwV39rQSrCzAeg==",
+      "path": "microsoft.bcl.asyncinterfaces/6.0.0",
+      "hashPath": "microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512"
+    },
+    "Microsoft.Bcl.HashCode/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-J2G1k+u5unBV+aYcwxo94ip16Rkp65pgWFb0R6zwJipzWNMgvqlWeuI7/+R+e8bob66LnSG+llLJ+z8wI94cHg==",
+      "path": "microsoft.bcl.hashcode/1.1.0",
+      "hashPath": "microsoft.bcl.hashcode.1.1.0.nupkg.sha512"
+    },
+    "Microsoft.Bcl.TimeProvider/8.0.0-rc.2.23479.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ZWrRJY8ZFo53lFVBXAGONyXZZJL03GVF24ZmbucV/qyrEbJUrdHGLV3QypHLXOQabTcNx/htpZ4ZwM7GU+4pjw==",
+      "path": "microsoft.bcl.timeprovider/8.0.0-rc.2.23479.6",
+      "hashPath": "microsoft.bcl.timeprovider.8.0.0-rc.2.23479.6.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Logging.Abstractions/6.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-K14wYgwOfKVELrUh5eBqlC8Wvo9vvhS3ZhIvcswV2uS/ubkTRPSQsN557EZiYUSSoZNxizG+alN4wjtdyLdcyw==",
+      "path": "microsoft.extensions.logging.abstractions/6.0.4",
+      "hashPath": "microsoft.extensions.logging.abstractions.6.0.4.nupkg.sha512"
+    },
+    "Microsoft.SemanticKernel/1.0.0-beta4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-p30vaWfOh7/mTHvFM7xWnHfWudYzD7Q2HBWGfodhn4yEpwUzLcv+f3eTH6dZXA+/YgPQEKZDvZfQLNqOP/Myug==",
+      "path": "microsoft.semantickernel/1.0.0-beta4",
+      "hashPath": "microsoft.semantickernel.1.0.0-beta4.nupkg.sha512"
+    },
+    "Microsoft.SemanticKernel.Abstractions/1.0.0-beta4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-GT1lT9+h4VnvR6icah5eRsr/ykjEwsWx0J5WgqZldln10uDDLvqWY92jeJKTibSBzeOReCeLJtakVb1wOacHCw==",
+      "path": "microsoft.semantickernel.abstractions/1.0.0-beta4",
+      "hashPath": "microsoft.semantickernel.abstractions.1.0.0-beta4.nupkg.sha512"
+    },
+    "Microsoft.SemanticKernel.Connectors.AI.OpenAI/1.0.0-beta4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-UaqiHst3ERriOctSBbq/iFLyFpabNJEZKr2JiWRKL4W4J0FtnpH1IHu7tc5P9Msah8rLmiFfWwJ74Wm04i+6cw==",
+      "path": "microsoft.semantickernel.connectors.ai.openai/1.0.0-beta4",
+      "hashPath": "microsoft.semantickernel.connectors.ai.openai.1.0.0-beta4.nupkg.sha512"
+    },
+    "Microsoft.SemanticKernel.Core/1.0.0-beta4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dtnxkqS27CNBnsUif2wa7zZfAcPSSrWkS3FeCKocXC7YRAMMwdX23TZfLXkLHLYDUKYNdWvySaDtc5TLQPTotA==",
+      "path": "microsoft.semantickernel.core/1.0.0-beta4",
+      "hashPath": "microsoft.semantickernel.core.1.0.0-beta4.nupkg.sha512"
+    },
+    "Microsoft.SemanticKernel.Planners.Core/1.0.0-beta4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gr1qT3by2M3qA7S7usP1Bx4SxSEM+2LiZ9KL+erRTkCASmUsnxi2UdrvCucDeKZpxLx0+rq3HvBuAgZGbNmykQ==",
+      "path": "microsoft.semantickernel.planners.core/1.0.0-beta4",
+      "hashPath": "microsoft.semantickernel.planners.core.1.0.0-beta4.nupkg.sha512"
+    },
+    "Microsoft.SemanticKernel.Plugins.Core/1.0.0-beta4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-krC+d5EF9+ueBIe2ySpOmqjziDDMP54FelaBpuo16pv9NrQQkPkHa6E0SYEM12OLUTDfHcFd3dKgdNz4Nr2YoA==",
+      "path": "microsoft.semantickernel.plugins.core/1.0.0-beta4",
+      "hashPath": "microsoft.semantickernel.plugins.core.1.0.0-beta4.nupkg.sha512"
+    },
+    "Microsoft.SemanticKernel.Plugins.Memory/1.0.0-beta4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-oMg9tqMN59NVpUB5kqQchPJ2StBrESf2H8yNHhrI0bX0bv2firSB9ARXsKDZaw6f8c+87C2wt2tM9DOIS1t8Lw==",
+      "path": "microsoft.semantickernel.plugins.memory/1.0.0-beta4",
+      "hashPath": "microsoft.semantickernel.plugins.memory.1.0.0-beta4.nupkg.sha512"
+    },
+    "Microsoft.SemanticKernel.Reliability.Basic/1.0.0-beta4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wuPWw9+2NWehVb5mNkZD6PeJ1VSrQvMD1dAWCvQGzMBAp5oJo/ssvRyVmIoSBmtfe/1jKIUj9O8DI6XZ+Tl/Dw==",
+      "path": "microsoft.semantickernel.reliability.basic/1.0.0-beta4",
+      "hashPath": "microsoft.semantickernel.reliability.basic.1.0.0-beta4.nupkg.sha512"
+    },
+    "Microsoft.SemanticKernel.TemplateEngine.Basic/1.0.0-beta4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2vIx/4i2lXeE7PkRpXzL1TPPYlU7xnzjS8OJtjlU3H7PHUG2rdopQdXQstzefvGW2L97WPJdqpePv3Q8JphGnA==",
+      "path": "microsoft.semantickernel.templateengine.basic/1.0.0-beta4",
+      "hashPath": "microsoft.semantickernel.templateengine.basic.1.0.0-beta4.nupkg.sha512"
+    },
+    "System.Diagnostics.DiagnosticSource/6.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KiLYDu2k2J82Q9BJpWiuQqCkFjRBWVq4jDzKKWawVi9KWzyD0XG3cmfX0vqTQlL14Wi9EufJrbL0+KCLTbqWiQ==",
+      "path": "system.diagnostics.diagnosticsource/6.0.1",
+      "hashPath": "system.diagnostics.diagnosticsource.6.0.1.nupkg.sha512"
+    },
+    "System.Memory.Data/1.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JGkzeqgBsiZwKJZ1IxPNsDFZDhUvuEdX8L8BDC8N3KOj+6zMcNU28CNN59TpZE/VJYy9cP+5M+sbxtWJx3/xtw==",
+      "path": "system.memory.data/1.0.2",
+      "hashPath": "system.memory.data.1.0.2.nupkg.sha512"
+    },
+    "System.Numerics.Tensors/8.0.0-rc.2.23479.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wWMbHrwDKLTVRi3eiXj/IcxOPmcT4jZt9O3LpGqriawYgtRy0upySVJYZEfe3lCM7d2i48W6PFBaLxAcgB6pYg==",
+      "path": "system.numerics.tensors/8.0.0-rc.2.23479.6",
+      "hashPath": "system.numerics.tensors.8.0.0-rc.2.23479.6.nupkg.sha512"
+    },
+    "System.Numerics.Vectors/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
+      "path": "system.numerics.vectors/4.5.0",
+      "hashPath": "system.numerics.vectors.4.5.0.nupkg.sha512"
+    },
+    "System.Runtime.CompilerServices.Unsafe/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/iUeP3tq1S0XdNNoMz5C9twLSrM/TH+qElHkXWaPvuNOt+99G75NrV0OS2EqHx5wMN7popYjpc8oTjC1y16DLg==",
+      "path": "system.runtime.compilerservices.unsafe/6.0.0",
+      "hashPath": "system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+    },
+    "System.Text.Encodings.Web/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Vg8eB5Tawm1IFqj4TVK1czJX89rhFxJo9ELqc/Eiq0eXy13RK00eubyU6TJE6y+GQXjyV5gSfiewDUZjQgSE0w==",
+      "path": "system.text.encodings.web/6.0.0",
+      "hashPath": "system.text.encodings.web.6.0.0.nupkg.sha512"
+    },
+    "System.Text.Json/6.0.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-WhW6zPEgRZoo+c1NEvSSmrME4+LqXmW6tcsRFsEiSMeco+qZ9rpLs7tT53EIkE/s9GNTYS4/STQoaGiKDSWifQ==",
+      "path": "system.text.json/6.0.8",
+      "hashPath": "system.text.json.6.0.8.nupkg.sha512"
+    },
+    "System.Threading.Tasks.Extensions/4.5.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zteT+G8xuGu6mS+mzDzYXbzS7rd3K6Fjb9RiZlYlJPam2/hU7JCBZBVEcywNuR+oZ1ncTvc/cq0faRr3P01OVg==",
+      "path": "system.threading.tasks.extensions/4.5.4",
+      "hashPath": "system.threading.tasks.extensions.4.5.4.nupkg.sha512"
+    }
+  }
+}
