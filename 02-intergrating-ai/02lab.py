@@ -4,7 +4,7 @@ import os
 from dotenv import load_dotenv
 
 # Load environment variables
-if load_dotenv():
+if load_dotenv("../.env"):
     print("Found OpenAI API Base Endpoint: " + os.getenv("OPENAI_API_BASE"))
 else: 
     print("OpenAI API Base Endpoint not found. Have you configured the .env file?")

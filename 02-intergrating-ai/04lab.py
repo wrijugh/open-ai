@@ -9,7 +9,7 @@ from semantic_kernel.connectors.ai.open_ai import (
 )
 
 async def main():
-    config = dotenv_values(".env")
+    config = dotenv_values("../.env")
     deployment_type = config.get("AZURE_OPEN_AI__DEPLOYMENT_TYPE", None)
 
     # AzureOpenAI
