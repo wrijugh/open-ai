@@ -1,0 +1,8 @@
+pip install --upgrade pip
+
+pip install dotenv
+pip install streamlit
+pip install langchain
+pip install openai
+pip install youtube-transcript-api
+pip install textwrap3
