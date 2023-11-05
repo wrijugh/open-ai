@@ -2,6 +2,12 @@
 from langchain.llms import AzureOpenAI
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
+
+# for agents
+from langchain.agents import load_tools
+from langchain.agents import initialize_agent
+from langchain.agents import AgentType
+
 from dotenv import load_dotenv
 import os
 
@@ -16,32 +22,25 @@ openai_api_base = os.getenv("OPENAI_API_BASE")
 openai_api_version = os.getenv("OPENAI_API_VERSION")
 deployment_name = os.getenv("AZURE_OPENAI_COMPLETION_DEPLOYMENT_NAME")
 model_name = os.getenv("OPENAI_COMPLETION_MODEL") 
-embedding_name = os.getenv("AZURE_OPENAI_EMBEDDING_DEPLOYMENT_NAME")
+# embedding_name = os.getenv("AZURE_OPENAI_EMBEDDING_DEPLOYMENT_NAME")
 
 
-def generate_pet_name(animal_type, pet_color):
-    
+
+def langchain_agent():
     llm = AzureOpenAI(
         model_name = model_name,
         deployment_name = deployment_name,
         temperature = 0.7    
     )
 
-    prompt_template_name = PromptTemplate(
-        input_variables=['animal_type', 'pet_color'],
-        template="I have a {animal_type} and I want a cool name for it. It is {pet_color} in color. Suggest five cool names for it."
+    tool = load_tools(["wikipedia", "llm-math"], llm=llm)
+
+    agent = initialize_agent(
+        tool, llm, agent=AgentType.ZERO_SHOT_REACT_DESCRIPTION, verbose=True
     )
 
-    name_chain = LLMChain(llm=llm, prompt=prompt_template_name)
-
-    response = name_chain(
-        {
-            "animal_type": animal_type,
-            "pet_color": pet_color
-        }
-    )
-
-    return response
+    result = agent.run("What is the average age od a dog? Multiply the age by 3.")
 
 if __name__ == "__main__":
-    print(generate_pet_name("cow", "black"))
+    # print(generate_pet_name("cow", "black"))
+    print(langchain_agent())
